@@ -41,4 +41,4 @@ class HTTPRequestHandler(server.SimpleHTTPRequestHandler):
         self.wfile.write(reply_body.encode('utf-8'))
 
 if __name__ == '__main__':
-    server.test(HandlerClass=HTTPRequestHandler)
+    server.test(HandlerClass=HTTPRequestHandler, port=8000)
